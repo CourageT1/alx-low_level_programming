@@ -7,12 +7,9 @@
  */
 int main(void)
 {
-int ch = 'a';
-while (ch <= '2')
-{
-putchar(ch);
-ch++;
-}
+char c;
+for (c = 'a'; c <= '2'; c++)
+putchar(c);
 putchar('\n');
 return (0);
 }
