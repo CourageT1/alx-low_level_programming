@@ -16,7 +16,7 @@ putchar((p / 10) + '0');
 putchar((p % 10) + '0');
 putchar(' ');
 putchar((q / 10) + '0');
-putchar((p / 10) + '0');
+putchar((q / 10) + '0');
 if (p == 98 && q == 99)
 continue;
 putchar(',');
