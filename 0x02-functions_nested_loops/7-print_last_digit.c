@@ -10,11 +10,12 @@ int last;
 last = n % 10;
 if (last < 0)
 {
-_putchar(-l + 48);
-return (-l)
+_putchar(-last + 48);
+return (-last);
 }
 else
 {
 _putchar(last + 48);
 return (last);
+}
 }
