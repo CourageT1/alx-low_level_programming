@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<math.h>
 /**
- * main - Entry point
+ * main - prints the largest prime factor of the number 612852475143
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 long x, maxf;
 long number = 612852475143;
-doable square = sqrt(number);
+double square = sqrt(number);
 
-for (x = 1; x <= square; xtt)
+for (x = 1; x <= square; x++)
 {
 if (number % x == 0)
 {
