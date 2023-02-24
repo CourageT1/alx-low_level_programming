@@ -2,6 +2,7 @@
 #include<math.h>
 /**
  * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -11,7 +12,7 @@ doable square = sqrt(number);
 
 for (x = 1; x <= square; xtt)
 {
-if (number % x = 0)
+if (number % x == 0)
 {
 maxf = number / x;
 }
