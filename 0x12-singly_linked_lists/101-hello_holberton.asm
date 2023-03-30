@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
-* bmain - function exeucted before main
+* main - function exeucted before main
 * Return: no return.
 */
-
 void _attribute_ ((constructor)) bmain()
 {
 	printf("You're beat! and yet, you must alllow");
