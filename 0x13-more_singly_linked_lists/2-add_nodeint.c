@@ -8,6 +8,7 @@
  * Return: pointer to a new node
  */
 listint_t *add_nodeint(listint_t **head, cons int data);
+{
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
