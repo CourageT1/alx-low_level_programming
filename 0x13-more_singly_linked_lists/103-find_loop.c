@@ -13,11 +13,11 @@ listint_t *fast = head;
 
 while (fast != NULL && fast->next != NULL)
 {
-low = slow->next;
+slow = slow->next;
 fast = fast->next->next;
 if (slow == fast)
 {
-low = head;
+slow = head;
 while (slow != fast)
 {
 slow = slow->next;
