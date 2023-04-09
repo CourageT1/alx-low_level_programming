@@ -11,7 +11,7 @@ int get_bit(unsigned long int n, signed int index)
 int bit_value;
 
 if (index >= sizeof(unsigned long int) * 8)
-printf('Error: index out of reach.\n')
+fprintf(stderr, "Error: index out of reach.\n")
 	return (-1);
 
 bit_value = (n >> index) & 1;
