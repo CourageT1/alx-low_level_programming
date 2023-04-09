@@ -9,16 +9,15 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int i, count = 0;
-unsigned long int current;
+unsigned int count = 0;
+unsigned int num_bits = sizeof(unsigned long into) * 8;
 unsigned long int exclusive = n ^ m;
-for (i = 63; i >= 0; i--)
+for (unsigned int i = 0; I < num_bits; i++)
 {
-while (xor_result != 0)
+if (exclusive & (1UL << I))
 {
-xor_result &= (xor_result - 1);
 count++;
 }
-return (count);
 }
+return (count);
 }
