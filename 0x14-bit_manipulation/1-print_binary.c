@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_binary - prints the binary
  * @n: number to print in binary
