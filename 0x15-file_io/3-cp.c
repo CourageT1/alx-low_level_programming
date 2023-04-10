@@ -4,8 +4,14 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-
 #define BUFFER_SIZE 1024
+
+/**
+* main - Entry point
+* copy_file - copies content of a file to another file
+* print_error - if argument fails
+* Return: pointer to newly_allocated buffer
+*/
 void print_error(int code, const char *message)
 {
 dprintf(STDERR_FILENO, "Error: %s\n", message);
@@ -19,7 +25,7 @@ fd_from = open(file_from, O_RDONLY);
 if (fd_from == -1)
 	print_error(98, strerror(errno));
 }
-fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP);
 if (fd_to == -1)
 	print_error(99, strerror(errno));
 while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
