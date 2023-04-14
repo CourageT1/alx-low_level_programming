@@ -56,7 +56,6 @@ printf("\n");
 else
 printf(" ");
 }
-}
 /**
  * print_class - Prints the class of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
@@ -203,7 +202,6 @@ printf("<unknown: %x>\n", e_type);
 }
 }
 /**
-
  * print_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
@@ -245,7 +243,6 @@ exit(98);
  * the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
-
 {
 Elf64_Ehdr *header;
 int o, r;
