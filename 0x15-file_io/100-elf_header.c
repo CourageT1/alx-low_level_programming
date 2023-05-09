@@ -1,57 +1,32 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <stdint.h>
-
 #include <string.h>
-
 #include <unistd.h>
-
 #include <errno.h>
-
 #include <fcntl.h>
 
 typedef struct {
 
     unsigned char magic[4];
-
     unsigned char class;
-
     unsigned char data;
-
     unsigned char version;
-
     unsigned char osabi;
-
     unsigned char abiversion;
-
     unsigned char pad[7];
-
     short type;
-
     short machine;
-
     int version2;
-
     unsigned long entry;
-
     unsigned long phoff;
-
     unsigned long shoff;
-
     int flags;
-
     short ehsize;
-
     short phentsize;
-
     short phnum;
-
     short shentsize;
-
     short shnum;
-
     short shstrndx;
 
 } Elf64_Ehdr;
