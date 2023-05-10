@@ -153,20 +153,14 @@ int main(int argc, char **argv)
         printf("Unknown\n");
 
         break;
-
-    }
-
-    printf("Entry point address:               0x%lx\n", header.e_entry);
-
-    printf("Format:                            %s\n",
-
-           header.e_ident[EI_CLASS] == ELFCLASS64 ? "elf64-x86-64" :
-
-           "elf32-i386");
-
-    close(fd);
-
-    return (0);
-
 }
+printf("Entry point address:               0x%lx\n", header.e_entry);
 
+printf("Format:                            %s\n",
+
+header.e_ident[EI_CLASS] == ELFCLASS64 ? "elf64-x86-64" :
+"elf32-i386");
+
+close(fd);
+return (0);
+}
