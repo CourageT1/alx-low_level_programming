@@ -9,17 +9,23 @@
 
 /**
  * error - entry point
- * main - entry point
- * message: text to print
+ * @message - text to print
  * Return: 0
  */
 void error(char *message)
 {
+char *message;
+
 dprintf(STDERR_FILENO, "Error: %s\n", message);
 
 exit(errno);
 }
-/* main - entry point */
+/*
+ * main - copies content of file to another
+ * @argc: number of arguments supplied to program
+ * @argv: array of pointers to argument
+ * Return: 0 (success)
+ */
 int main(int argc, char *argv[])
 {
 if (argc != 3)
