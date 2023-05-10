@@ -164,12 +164,9 @@ int main(int argc, char *argv[])
 
 		default:
 
-			printf("<unknown: %x>\n", header.e_ident[EI_OSABI]);
+			printf("<unknown: %x>\n", header.e_identEI_OSABI);
 
 			break;
 
-	}
-
-	printf("  ABI Version:                       %d\n",
-
-	       header.e
+}
+printf("ABI Version: %d\n", header.e);
