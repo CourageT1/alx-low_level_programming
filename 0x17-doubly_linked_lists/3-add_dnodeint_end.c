@@ -15,7 +15,7 @@ if (new_node == NULL)
 return (NULL);
 }
 new_node->n = n;
-new_node->next = NULL;    
+new_node->next = NULL;
 
 if (*head == NULL)
 {
